@@ -24,7 +24,7 @@ nav ul{
 nav li{
     list-style: none;
     margin-left: 40px;
-    font-size: 15px;
+    font-weight: 500;
 }
 
 /* --------------------------
@@ -42,10 +42,16 @@ nav li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px 150px 0 150px;
     padding: 0 200px;
+    
+}
+.banner-title{
+    font-size: 42px;
+    text-align: center;
 }
 .banner-image img{
-    width: 600;
+    width: 100%;
     height: 300px;
 }
 .btn-primary{
@@ -55,6 +61,10 @@ nav li{
     border-radius: 5px;
     padding: 10px 15px;
 }
+.description{
+    color: #727272;
+    font-weight: 400;  
+}
 
 /* --------------------------
     Feature section's styles
@@ -62,17 +72,24 @@ nav li{
 .second-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    padding: 30px 200px;
+    padding: 50px 200px;
+}
+.feature-title{
+    font-size: 32px;
 }
 .feature-images{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
     gap: 10px;
+    
 }
 .feature-images img{
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 320px;
+}
+.feature-details{
+    padding: 150px 0 200px 50px;    
 }
 
 /* -------------------------------------
@@ -82,9 +99,39 @@ nav li{
     display: flex;
     padding: 30px 150px;
 }
+.enjoyable-feature-title{
+    font-size: 28px;
+    border-left: 4px solid #FF900E;
+    padding: 10px 200px 10px 10px;
+    margin: 10px 50px 10px 0;
+}
+.feature{
+    box-shadow: 0 10px whitesmoke;
+    padding: 15px 20px 10px 15px;
+    margin: 10px 100px 10px 0;
+}
 .enjoyable-image img{
-    width: 400px;
-    height: 450px;
+    
+    width: 500px;
+    height: 850px;
+}
+.enjoyable-image{
+    display: inline-block;
+    position: relative;
+}
+.feature-button{
+    /* button position */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-30%,30%);
+    /* button design */
+    color: #FFFFFF;
+    font-size: 20px;
+    background-color: #FF900E;
+    border: 0;
+    border-radius: 5px;
+    padding: 20px 30px;
 }
 
 /* -----------------------------
@@ -125,15 +172,20 @@ nav li{
 .sponsor-details{
     text-align: center;
     padding: 20px 200px;
+    margin: 0 150px;
 }
 .sponsor-logo{
     display: flex;
+   
 }
 .sponsor-logo img{
-    margin-left: 50px;
-    margin-top: 20px;
-    height: 38px;
-    width: 52;
+    filter: grayscale(100%);
+    opacity: 1;
+    margin: 20px 100px 0 30px;
+    height: 35px;
+    width: 70px;
+   
+    
 }
 /* -------------------
      Contact Section
@@ -145,6 +197,7 @@ nav li{
     background-color: whitesmoke;
     text-align: left;
 }
+
 .contact input[type ="text"],textarea{
     margin-bottom: 24px;
     border: 0;
