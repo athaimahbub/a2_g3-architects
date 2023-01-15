@@ -1,0 +1,170 @@
+*{  margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/*---------------------------
+ header nav section's styles
+ -----------------------------*/
+.first-container{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 200px;
+}
+.nav-title{
+    font-size: 25px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+/* --------------------------
+    Banner section styles
+   -------------------------- */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.banner-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 200px;
+}
+.banner-image img{
+    width: 600;
+    height: 300px;
+}
+.btn-primary{
+    color: #FFFFFF;
+    background-color: #FF900E;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+/* --------------------------
+    Feature section's styles
+   -------------------------- */
+.second-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 30px 200px;
+}
+.feature-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+}
+.feature-images img{
+    width: 250px;
+    height: 250px;
+}
+
+/* -------------------------------------
+    Enjoyable Feature section's styles
+   ------------------------------------- */
+.third-container{
+    display: flex;
+    padding: 30px 150px;
+}
+.enjoyable-image img{
+    width: 400px;
+    height: 450px;
+}
+
+/* -----------------------------
+    Some Fact section's styles
+   ----------------------------- */
+.fourth-container{
+    padding: 70px 150px;
+}
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.button-card{
+    border: 1px solid #FF900E;
+    border-radius: 5px;
+    padding: 20px 25px;
+    background-color: white;
+    transition: width 1s, height 1s, transform 1s;
+}
+.button-card:hover{
+  width: 150px;
+  height: 150px;
+  background-color: #f5b062;
+  transform: rotate(360deg);
+  
+}
+/*----------------------------
+    Sponsor section's styles
+   ---------------------------- */
+.sponsor-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.sponsor-details{
+    text-align: center;
+    padding: 20px 200px;
+}
+.sponsor-logo{
+    display: flex;
+}
+.sponsor-logo img{
+    margin-left: 50px;
+    margin-top: 20px;
+    height: 38px;
+    width: 52;
+}
+/* -------------------
+     Contact Section
+   --------------------*/
+.contact{
+    display: flex;
+    gap: 100px;
+    padding: 100px 200px;
+    background-color: whitesmoke;
+    text-align: left;
+}
+.contact input[type ="text"],textarea{
+    margin-bottom: 24px;
+    border: 0;
+    width: 100%;
+    padding: 18px 30px;
+}
+.contact a{
+    text-decoration: none;
+}
+/* ---------------------
+    Footer section styles
+   ---------------------- */
+.footer-container{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.footer-btn{
+    border: 0;
+    border-radius: 5px;
+    padding: 20px 280px;
+    background-color: antiquewhite;
+}
